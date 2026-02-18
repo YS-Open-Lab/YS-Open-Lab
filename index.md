@@ -103,3 +103,27 @@ YS-Open-Lab 是南京XX大学从事人工智能与智能系统研究的科研团
   style="bare"
   text=text
 %}
+{% include section.html %}
+
+## 合作单位
+
+<div style="display: flex; flex-wrap: wrap; gap: 16px; justify-content: center; margin: 20px 0;">
+
+  <div style="border: 1px solid #ddd; border-radius: 8px; padding: 16px 24px; min-width: 200px; text-align: center; background: #f9f9f9;">
+    <a href="https://www.gsxt.gov.cn" target="_blank" style="text-decoration: none; color: #333; font-weight: bold;">
+      四川永霜学术网络科技有限公司
+    </a>
+    <div style="font-size: 0.8em; color: #888; margin-top: 6px;">企业合作</div>
+  </div>
+
+  <div style="border: 1px solid #ddd; border-radius: 8px; padding: 16px 24px; min-width: 200px; text-align: center; background: #f9f9f9;">
+    <span style="color: #333; font-weight: bold;">合作企业 2</span>
+    <div style="font-size: 0.8em; color: #888; margin-top: 6px;">企业合作</div>
+  </div>
+
+  <div style="border: 1px solid #ddd; border-radius: 8px; padding: 16px 24px; min-width: 200px; text-align: center; background: #f9f9f9;">
+    <span style="color: #333; font-weight: bold;">合作企业 3</span>
+    <div style="font-size: 0.8em; color: #888; margin-top: 6px;">企业合作</div>
+  </div>
+
+</div>
