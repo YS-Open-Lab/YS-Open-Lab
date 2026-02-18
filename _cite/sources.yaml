@@ -1,0 +1,28 @@
+# 有DOI的论文（模板自动抓取标题、作者、期刊等所有信息）
+- id: doi:10.1038/s41586-021-03819-2
+  featured: true
+  type: journal
+
+# 没有DOI的论文，手动填写所有字段
+- title: "基于深度学习的智能系统优化方法"
+  authors:
+    - 张三
+    - 李四
+    - 王五
+  publisher: "IEEE Transactions on Neural Networks"
+  date: "2024-06-15"
+  type: journal
+  featured: true
+  links:
+    pdf: https://arxiv.org/pdf/xxxx
+    code: https://github.com/YS-Open-Lab/xxx
+
+- title: "智能数据分析平台设计与实现"
+  authors:
+    - 李四
+    - 赵六
+  publisher: "第XX届全国人工智能学术会议"
+  date: "2023-10-01"
+  type: conference
+  links:
+    pdf: https://arxiv.org/pdf/xxxx
