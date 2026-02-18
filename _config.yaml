@@ -19,22 +19,33 @@ links:
 
 # front matter defaults
 defaults:
-  # all markdown files
+  # 根目录所有页面默认中文
   - scope:
       path: ""
     values:
       layout: default
-      lang: zh  
-  # markdown files in /_members
+      lang: zh
+
+  # en/ 目录下所有页面默认英文
+  - scope:
+      path: "en"
+    values:
+      layout: default
+      lang: en
+
+  # members集合
   - scope:
       type: "members"
     values:
       layout: member
-  # markdown files in /_posts
+      lang: zh
+
+  # posts集合
   - scope:
       type: "posts"
     values:
       layout: post
+      lang: zh
 
 collections:
   # generate page for each member
