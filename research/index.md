@@ -26,3 +26,17 @@ title: Research & Publications
 ### {{ year }}
 {% include list.html data="citations" component="citation" filters="date: ^{{ year }}" %}
 {% endfor %}
+{% include section.html %}
+
+## 期刊论文（Journal）
+{% include list.html data="citations" component="citation" filters="type: journal" %}
+
+{% include section.html %}
+
+## 会议论文（Conference）
+{% include list.html data="citations" component="citation" filters="type: conference" %}
+
+{% include section.html %}
+
+## 专利（Patent）
+{% include list.html data="citations" component="citation" filters="type: patent" %}
