@@ -73,4 +73,23 @@
   display: none;
 }
 
+.portrait {
+  position: relative;
+}
+.portrait:hover::after {
+  content: "View Profile";
+  position: absolute;
+  bottom: 65px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 0.8em;
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: 10;
+}
+
 /*# sourceMappingURL=portrait.css.map */
