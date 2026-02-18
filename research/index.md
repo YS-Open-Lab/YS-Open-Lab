@@ -1,27 +1,19 @@
 ---
-title: Research
-nav:
-  order: 1
-  tooltip: Published works
+title: Research & Publications
 ---
 
-# {% include icon.html icon="fa-solid fa-microscope" %}Research
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+本页面展示 YS Laboratory 的科研成果，包括学术论文、科研项目与技术成果。
 
 {% include section.html %}
 
-## Highlighted
-
-{% include citation.html lookup="Open collaborative writing with Manubot" style="rich" %}
-
-{% include section.html %}
-
-## All
-
-{% include search-box.html %}
+## 代表性成果（Featured Publications）
 
 {% include search-info.html %}
 
-{% include list.html data="citations" component="citation" style="rich" %}
+{% include list.html data="citations" component="citation" filters="featured: true" %}
+
+{% include section.html %}
+
+## 全部成果（All Publications）
+
+{% include list.html data="citations" component="citation" %}
