@@ -46,23 +46,30 @@
 {% assign lang = page.lang | default: "zh" %}
 {% assign t = site.data.translations.nav %}
 
+{% assign lang = page.lang | default: "zh" %}
+
 <nav>
-  <a href="{{ '/research/' | relative_url }}">{{ t.research[lang] }}</a>
-  <a href="{{ '/projects/' | relative_url }}">{{ t.resources[lang] }}</a>
-  <a href="{{ '/team/' | relative_url }}">{{ t.team[lang] }}</a>
-  <a href="{{ '/about/' | relative_url }}">{{ t.about[lang] }}</a>
-  <a href="{{ '/collaboration/' | relative_url }}">{{ t.collaboration[lang] }}</a>
-  <a href="{{ '/contact/' | relative_url }}">{{ t.contact[lang] }}</a>
-
-  <span class="lang-divider">|</span>
-
   {% if lang == "zh" %}
-    <span class="lang-current">中</span>
-    <span class="lang-sep">/</span>
-    <a class="lang-switch" href="{{ page.url | replace: '.html', '' | prepend: '/en' }}">EN</a>
+    <a href="{{ '/research/' | relative_url }}">成果</a>
+    <a href="{{ '/projects/' | relative_url }}">资源</a>
+    <a href="{{ '/team/' | relative_url }}">成员</a>
+    <a href="{{ '/about/' | relative_url }}">概况</a>
+    <a href="{{ '/collaboration/' | relative_url }}">合作</a>
+    <a href="{{ '/contact/' | relative_url }}">联系</a>
+    <span style="color:white;opacity:0.3;margin:0 8px;">|</span>
+    <span style="font-weight:bold;color:white;">中</span>
+    <span style="color:white;opacity:0.5;margin:0 3px;">/</span>
+    <a href="{{ page.url | prepend: '/en' | replace: '/en/en', '/en' }}">EN</a>
   {% else %}
-    <a class="lang-switch" href="{{ page.url | remove_first: '/en' }}">中</a>
-    <span class="lang-sep">/</span>
-    <span class="lang-current">EN</span>
+    <a href="{{ '/en/research/' | relative_url }}">Research</a>
+    <a href="{{ '/en/projects/' | relative_url }}">Resources</a>
+    <a href="{{ '/en/team/' | relative_url }}">Team</a>
+    <a href="{{ '/en/about/' | relative_url }}">About</a>
+    <a href="{{ '/en/collaboration/' | relative_url }}">Collaboration</a>
+    <a href="{{ '/en/contact/' | relative_url }}">Contact</a>
+    <span style="color:white;opacity:0.3;margin:0 8px;">|</span>
+    <a href="{{ page.url | remove_first: '/en' }}">中</a>
+    <span style="color:white;opacity:0.5;margin:0 3px;">/</span>
+    <span style="font-weight:bold;color:white;">EN</span>
   {% endif %}
 </nav>
