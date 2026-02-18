@@ -17,12 +17,12 @@ YS-Open-Lab 是南京XX大学从事人工智能与智能系统研究的科研团
 ## 研究亮点
 
 {% capture text %}
-我们专注于人工智能与智能系统的前沿研究，涵盖机器学习、自然语言处理、计算机视觉等核心领域，持续产出高水平学术成果。
+展示代表性论文、科研项目与技术成果。
 
 {%
   include button.html
   link="research"
-  text="查看我们的成果"
+  text="查看成果"
   icon="fa-solid fa-arrow-right"
   flip=true
   style="bare"
@@ -33,17 +33,17 @@ YS-Open-Lab 是南京XX大学从事人工智能与智能系统研究的科研团
   include feature.html
   image="images/photo.jpg"
   link="research"
-  title="科研成果"
+  title="实验室成果（Research & Publications）"
   text=text
 %}
 
 {% capture text %}
-实验室积累了丰富的开源工具、数据集与项目资源，欢迎学术界与产业界共同使用与贡献。
+开放数据集、代码工具与实验平台。
 
 {%
   include button.html
   link="projects"
-  text="浏览资源"
+  text="进入资源页面"
   icon="fa-solid fa-arrow-right"
   flip=true
   style="bare"
@@ -54,19 +54,19 @@ YS-Open-Lab 是南京XX大学从事人工智能与智能系统研究的科研团
   include feature.html
   image="images/photo.jpg"
   link="projects"
-  title="开放资源"
+  title="实验室资源（Resources）"
   flip=true
   style="bare"
   text=text
 %}
 
 {% capture text %}
-实验室汇聚了一批优秀的教授、博士生与研究人员，欢迎有志于AI研究的同行加入。
+实验室教师与学生团队介绍。
 
 {%
   include button.html
   link="team"
-  text="认识我们的团队"
+  text="进入团队成员介绍界面"
   icon="fa-solid fa-arrow-right"
   flip=true
   style="bare"
@@ -77,6 +77,29 @@ YS-Open-Lab 是南京XX大学从事人工智能与智能系统研究的科研团
   include feature.html
   image="images/photo.jpg"
   link="team"
-  title="团队成员"
+  title="实验室成员（Team）"
+  text=text
+%}
+
+{% capture text %}
+实验室创建背景与研究方向介绍。
+
+{%
+  include button.html
+  link="about"
+  text="进入概况界面"
+  icon="fa-solid fa-arrow-right"
+  flip=true
+  style="bare"
+%}
+{% endcapture %}
+
+{%
+  include feature.html
+  image="images/photo.jpg"
+  link="about"
+  title="实验室概况（About）"
+  flip=true
+  style="bare"
   text=text
 %}
