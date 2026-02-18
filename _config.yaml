@@ -24,6 +24,7 @@ defaults:
       path: ""
     values:
       layout: default
+      lang: zh  
   # markdown files in /_members
   - scope:
       type: "members"
