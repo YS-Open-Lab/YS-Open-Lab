@@ -1,1 +1,1 @@
-Sitemap: https://ys-open-lab.github.io/YS-Laboratory/sitemap.xml
+Sitemap: https://ys-open-lab.github.io/YS-Open-Lab/sitemap.xml
