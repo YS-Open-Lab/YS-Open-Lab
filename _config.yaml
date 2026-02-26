@@ -1,3 +1,6 @@
+url: "https://ys-open-lab.github.io" # 添加了主域名
+baseurl: "/YS-Open-Lab"              # 添加了项目子路径
+
 # site properties and page defaults
 title: YS-Open-Lab
 subtitle: Intelligent Systems & AI Research Lab
